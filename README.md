@@ -40,14 +40,6 @@
 * [cite_start]🌍 **Visitalia**: Collaborative full-stack tourism platform built with ASP.NET MVC[cite: 207, 208].
 * [cite_start]🥇 **1st Place**: Winner of IKUANTS Glow Up Ideathon for sustainable housing solutions[cite: 262, 263].
 
----
-
-### 📊 Simulation Metrics
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=faruksevuk&show_icons=true&theme=tokyonight&bg_color=0D1117&title_color=00E5FF&icon_color=FF00FF&text_color=FFFFFF" alt="Faruk's Stats" />
-  <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=faruksevuk&layout=compact&theme=tokyonight&bg_color=0D1117&title_color=00E5FF&text_color=FFFFFF" alt="Top Langs" />
-</div>
 
 ---
 
