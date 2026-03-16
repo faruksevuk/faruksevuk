@@ -28,17 +28,6 @@ My current focus is on **AI-Augmented Development**. I aim to leverage **Generat
 
 ---
 
-### 🛠️ The Tech Stack (Neon Integrated)
-| Category | Tools |
-| :--- | :--- |
-| **Mobile & Desktop** | Flutter, Dart |
-| **Web & Backend** | ASP.NET MVC, C#, SQL |
-| **Database** | Cloud Firestore, MSSQL, Supabase |
-| **Automation** | Selenium WebDriver, n8n |
-| **AI/ML** | Prompt Engineering, Personal Agent Engineering |
-
----
-
 ### 🏆 Milestones & Artifacts
 * 🧑‍🍳 **MELD**: AI-powered fusion recipe generator mobile app. 
 * ✨ **Dreamie**: AI-powered dream interpretation engine with personalized style modules implemented mobile app.
@@ -54,3 +43,14 @@ My current focus is on **AI-Augmented Development**. I aim to leverage **Generat
   <a href="https://linkedin.com/in/faruksevuk"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://faruksevuk.com"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=about.me&logoColor=white" /></a>
 </p>
+
+---
+
+### 🛠️ The Tech Stack
+| Category | Tools |
+| :--- | :--- |
+| **Mobile & Desktop** | Flutter, Dart |
+| **Web & Backend** | ASP.NET MVC, C#, SQL |
+| **Database** | Cloud Firestore, MSSQL, Supabase |
+| **Automation** | Selenium WebDriver, n8n |
+| **AI/ML** | Prompt Engineering, Personal Agent Engineering |
