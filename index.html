@@ -1,53 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Faruk Sevük</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Griffy&family=Metal+Mania&family=Pirata+One&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Faruk Sevük</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Griffy&family=Pirata+One&family=Metal+Mania&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <div class="background"></div>
 
-    <div class="personal-container">
-        <div class="personal-flex">
-            <div class="border">
-                <div class="profile-image" id="profileImage"></div>
-            </div>
-            <div class="personal-text">
-                <h4>Computer Engineering Student</h4>
-                <h1>Faruk Sevük</h1>
-                <p>Welcome to page of Faruk Sevük. This is made by him, 
-                    and this is somewhat a treasure map. Enjoy your time 
-                    while trying to find the treasure, a little hint: it's alive.</p>
-            </div>
+  <div class="bg-layer"></div>
+  <canvas id="stars"></canvas>
+
+  <main class="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="avatar-wrap">
+        <div class="avatar" id="profileImage"></div>
+        <div class="avatar-ring"></div>
+      </div>
+
+      <div class="hero-text">
+        <p class="label">⚓ Computer Engineering Student</p>
+        <h1>Faruk<br>Sevük</h1>
+        <p class="tagline">Flutter developer. Builder of things that ship.<br>
+          Currently sailing the seas of AI-powered apps.</p>
+
+        <div class="icons">
+          <a href="https://linkedin.com/in/faruksevuk" target="_blank" class="icon-btn linkedin" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/faruksevuk" target="_blank" class="icon-btn github" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <a href="https://faruksevuk.com/FarukSevuk_CV.pdf" target="_blank" class="icon-btn cv" aria-label="CV">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6zm2-5h8v1H8v-1zm0-2h8v1H8v-1zm0-2h5v1H8v-1z"/></svg>
+          </a>
+          <a href="mailto:faruksevuk@outlook.com" class="icon-btn mail" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
         </div>
-    </div>
+      </div>
 
-    <div class="social-icons">
-        <a href="https://linkedin.com/in/faruksevuk" target="_blank" class="icon linkedin"></a>
-        <a href="https://github.com/faruksevuk" target="_blank" class="icon github"></a>
-        <a href="https://faruksevuk.com/cv.pdf" target="_blank" class="icon cv"></a>
-        <a href="mailto:faruksevuk@outlook.com" class="icon mail"></a>
-    </div>
-    
-    <div class="footer">
-        <h1>Thanks for dropping anchor at my port © 2025 Captain Faruk. All doubloons reserved.</h1>
-        <p>CREDITS:</br>
-            linkedin icon : by Freepik - Flaticon</br>
-            github icon : by Dave Gandy - Flaticon</br>
-            cv icon : by Icon Hubs - Flaticon</br>
-            e-mail icon : by Atif Arshad - Flaticon</br>
-            if encountered, sound : The Matrix Soundtrack - Spybreak</br></br>
-            ---------------------------------------------------------</br></br>
-            if you still couldn't find the treasure try double click
-        </p>
-    </div>
+      <!-- SCROLL HINT -->
+      <div class="scroll-hint" id="scrollHint">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- SUMMARY -->
+    <section class="summary">
+      <p class="summary-text">
+        Flutter developer and Computer Engineering student with a proven ability to ship production‑ready, AI‑powered mobile applications. Built and launched <strong>Meld</strong> — a fusion recipe app spanning 106 world cuisines, 11 dietary filters, and 11 languages, currently live on the App Store; independently, from concept to deployment. Experienced with Gemini API, Supabase, Firebase, and RevenueCat. Completed an <strong>Erasmus+</strong> exchange at Karlsruhe University of Applied Sciences. Awarded <strong>1st place</strong> at IKUANTS Glow Up Ideathon among 15 teams. Looking to join a team where I can build real products, grow fast, and contribute from day one. Not just building features — building products that reach real users.
+      </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <h2 class="section-title">⚔ Voyages</h2>
+      <div class="cards">
+
+        <a href="https://apps.apple.com/app/meld" target="_blank" class="card">
+          <div class="card-badge live">Live on App Store</div>
+          <h3>Meld</h3>
+          <p class="card-sub">AI Fusion Culinary App</p>
+          <p class="card-desc">106 world cuisines × AI = endless unique recipes. Flutter · Supabase · Gemini API · RevenueCat · 11 languages</p>
+          <span class="card-arrow">→</span>
+        </a>
+
+        <div class="card">
+          <div class="card-badge">Flutter · Firebase</div>
+          <h3>Dreamie</h3>
+          <p class="card-sub">AI Dream Analysis App</p>
+          <p class="card-desc">Multi-perspective dream interpretation — Psychological, Spiritual, Islamic. Powered by Gemini API.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-badge">Flutter · Windows</div>
+          <h3>SMMM Asistanım</h3>
+          <p class="card-sub">Financial Consultant Assistant</p>
+          <p class="card-desc">Desktop app automating financial workflows. 100+ client records, ~70% reduction in manual data entry.</p>
+        </div>
+
+        <a href="https://github.com/faruksevuk" target="_blank" class="card ghost">
+          <p class="card-ghost-text">More on GitHub →</p>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- TREASURE HINT -->
+    <section class="treasure-hint">
+      <p class="hint-text">🗺 This is somewhat a treasure map. The treasure is alive.<br>
+        <span class="hint-small">Hint: double-click the portrait above.</span>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p class="footer-brand">© 2025 Captain Faruk. All doubloons reserved. ☠</p>
+    <p class="footer-credits">
+      Icons: Freepik · Dave Gandy · Icon Hubs · Atif Arshad (Flaticon) &nbsp;·&nbsp;
+      Sound: The Matrix Soundtrack – Spybreak
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

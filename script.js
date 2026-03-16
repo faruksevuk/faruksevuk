@@ -1,129 +1,150 @@
+// ── Hide scroll hint on first scroll ──────────────────────────
+const scrollHint = document.getElementById('scrollHint');
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 40) {
+    scrollHint?.classList.add('hidden');
+  } else {
+    scrollHint?.classList.remove('hidden');
+  }
+}, { passive: true });
+
+// ── Custom cursor ──────────────────────────────────────────────
+document.addEventListener('mousemove', (e) => {
+  document.body.style.setProperty('--cx', e.clientX + 'px');
+  document.body.style.setProperty('--cy', e.clientY + 'px');
+});
+
+// ── Particle trail ─────────────────────────────────────────────
+let lastParticle = 0;
+document.addEventListener('mousemove', (e) => {
+  const now = Date.now();
+  if (now - lastParticle < 80) return;
+  lastParticle = now;
+
+  const p = document.createElement('div');
+  p.className = 'particle';
+  const size = Math.random() * 5 + 5;
+  p.style.cssText = `
+    left: ${e.clientX - size / 2}px;
+    top: ${e.clientY - size / 2}px;
+    width: ${size}px;
+    height: ${size}px;
+  `;
+  document.body.appendChild(p);
+  setTimeout(() => p.remove(), 1100);
+});
+
+// ── Stars canvas ───────────────────────────────────────────────
+const canvas = document.getElementById('stars');
+const ctx = canvas.getContext('2d');
+let stars = [];
+
+function initStars() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+  stars = Array.from({ length: 120 }, () => ({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    r: Math.random() * 1.2 + 0.3,
+    alpha: Math.random(),
+    speed: Math.random() * 0.008 + 0.002,
+  }));
+}
+
+function drawStars() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  stars.forEach(s => {
+    s.alpha += s.speed;
+    if (s.alpha > 1 || s.alpha < 0) s.speed *= -1;
+    ctx.globalAlpha = s.alpha;
+    ctx.fillStyle = '#ffd700';
+    ctx.beginPath();
+    ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+    ctx.fill();
+  });
+  requestAnimationFrame(drawStars);
+}
+
+initStars();
+drawStars();
+window.addEventListener('resize', initStars);
+
+// ── Avatar double-click → Matrix Easter egg ───────────────────
 const profileImage = document.getElementById('profileImage');
 let audio;
-
-// Double-click detection
 let clickCount = 0;
 let clickTimer = null;
 
 profileImage.addEventListener('click', () => {
-    clickCount++;
-    if (clickCount === 2) {
-        audio = new Audio('sounds/matrix.mp3');
-        audio.loop = false;
-        audio.play();
+  clickCount++;
+  if (clickCount === 2) {
+    clickCount = 0;
+    clearTimeout(clickTimer);
+    clickTimer = null;
 
-        startMatrix();
-        setTimeout(() => {
-            stopMatrix("You found the treasure! It's me, hehe :)");
-        }, 5200);
-        clickCount = 0;
-        clearTimeout(clickTimer);
-        clickTimer = null;
-    } else {
-        if (clickTimer) clearTimeout(clickTimer);
-        clickTimer = setTimeout(() => {
-            clickCount = 0;
-        }, 400); // 400ms window for double click
-    }
+    profileImage.classList.add('revealed');
+
+    try {
+      audio = new Audio('sounds/matrix.mp3');
+      audio.loop = false;
+      audio.play();
+    } catch (_) {}
+
+    startMatrix();
+    setTimeout(() => {
+      stopMatrix("You found the treasure! It's me, hehe :)");
+    }, 5200);
+  } else {
+    if (clickTimer) clearTimeout(clickTimer);
+    clickTimer = setTimeout(() => { clickCount = 0; }, 400);
+  }
 });
 
 function startMatrix() {
-    // Matrix efekti için gerekli div'i oluştur
-    const matrixDiv = document.createElement('div');
-    matrixDiv.id = 'matrix';
-    document.body.appendChild(matrixDiv);
+  const wrap = document.createElement('div');
+  wrap.id = 'matrix';
+  document.body.appendChild(wrap);
 
-    // Matrix efekti kodları buraya (aşağıdaki örnek veya istediğiniz bir efekt)
-    const canvas = document.createElement('canvas');
-    matrixDiv.appendChild(canvas);
+  const mc = document.createElement('canvas');
+  wrap.appendChild(mc);
+  mc.width = window.innerWidth;
+  mc.height = window.innerHeight;
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+  const mctx = mc.getContext('2d');
+  const alphabet = 'アァカサタナハマヤャラワガザダバパABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+  const fontSize = 16;
+  const cols = Math.floor(mc.width / fontSize);
+  const drops = new Array(cols).fill(1);
 
-    const context = canvas.getContext('2d');
+  function draw() {
+    mctx.fillStyle = 'rgba(0,0,0,0.05)';
+    mctx.fillRect(0, 0, mc.width, mc.height);
+    mctx.fillStyle = '#0F0';
+    mctx.font = `${fontSize}px monospace`;
+    drops.forEach((y, i) => {
+      mctx.fillText(alphabet[Math.floor(Math.random() * alphabet.length)], i * fontSize, y * fontSize);
+      if (y * fontSize > mc.height && Math.random() > 0.975) drops[i] = 0;
+      drops[i]++;
+    });
+  }
 
-    const katakana = 'アァカサタナハマヤャラワガザダバパ';
-    const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    const nums = '0123456789';
-
-    const alphabet = katakana + latin + nums;
-
-    const fontSize = 16;
-    const columns = canvas.width / fontSize;
-
-    const drops = [];
-
-    for (let x = 0; x < columns; x++) {
-        drops[x] = 1;
-    }
-
-    function draw() {
-        context.fillStyle = 'rgba(0, 0, 0, 0.05)';
-        context.fillRect(0, 0, canvas.width, canvas.height);
-
-        context.fillStyle = '#0F0';
-        context.font = fontSize + 'px arial';
-
-        for (let i = 0; i < drops.length; i++) {
-            const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
-            context.fillText(text, i * fontSize, drops[i] * fontSize);
-
-            if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-                drops[i] = 0;
-            }
-
-            drops[i]++;
-        }
-    }
-
-    const intervalId = setInterval(draw, 33);
-    matrixDiv.intervalId = intervalId; // intervalId'yi matrixDiv'e ekle
+  wrap._interval = setInterval(draw, 33);
 }
 
-function stopMatrix(message) {
-    const matrixDiv = document.getElementById('matrix');
-    if (matrixDiv) {
-        clearInterval(matrixDiv.intervalId); // interval'i temizle
+function stopMatrix(msg) {
+  const wrap = document.getElementById('matrix');
+  if (!wrap) return;
+  clearInterval(wrap._interval);
 
-        const canvas = matrixDiv.querySelector('canvas');
-        const context = canvas.getContext('2d');
-        
-        context.fillStyle = 'red';
-        context.font = '60px Griffy';
-        context.textAlign = 'center';
-        context.fillText(message, canvas.width / 2, canvas.height / 2);
-
-        setTimeout(() => {
-            matrixDiv.remove(); // Matrix div'ini kaldır
-            if (audio) {
-                audio.pause(); // Müziği durdur
-                audio.currentTime = 0; // Müziği başa sar
-            }
-        }, 3300);
-    }
-}
-
-// mouse tracker
-let lastTime = 0;
-document.addEventListener("mousemove", function (e) {
-  const now = Date.now();
-  if (now - lastTime < 90) return; // 100ms delay → daha az iz
-  lastTime = now;
-
-  const particle = document.createElement("div");
-  particle.className = "particle";
-  document.body.appendChild(particle);
-
-  const size = Math.random() * 4 + 6; // daha büyük ve canlı
-  particle.style.left = e.pageX - size / 2 + "px";
-  particle.style.top = e.pageY - size / 2 + "px";
-  particle.style.width = size + "px";
-  particle.style.height = size + "px";
-
-  const rotate = Math.random() * 360;
-  particle.style.transform = `rotate(${rotate}deg)`;
+  const mc = wrap.querySelector('canvas');
+  const mctx = mc.getContext('2d');
+  mctx.fillStyle = '#ff2222';
+  mctx.font = 'bold 48px Griffy, serif';
+  mctx.textAlign = 'center';
+  mctx.fillText(msg, mc.width / 2, mc.height / 2);
 
   setTimeout(() => {
-    particle.remove();
-  }, 1300); // daha uzun ömür
-});
+    wrap.remove();
+    if (audio) { audio.pause(); audio.currentTime = 0; }
+  }, 3300);
+}
