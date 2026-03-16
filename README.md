@@ -26,19 +26,20 @@
 ### 🛠️ The Tech Stack (Neon Integrated)
 | Category | Tools |
 | :--- | :--- |
-| **Mobile & Desktop** | [cite_start]Flutter, Dart [cite: 193, 235] |
-| **Web & Backend** | [cite_start]ASP.NET MVC, C#, SQL [cite: 209, 235] |
-| **Database** | [cite_start]Cloud Firestore, MSSQL [cite: 198, 236] |
-| **Automation** | [cite_start]Selenium WebDriver [cite: 203] |
-| **AI/ML** | [cite_start]Gemini API Integration, Prompt Engineering [cite: 196] |
+| **Mobile & Desktop** | Flutter, Dart |
+| **Web & Backend** | ASP.NET MVC, C#, SQL |
+| **Database** | Cloud Firestore, MSSQL |
+| **Automation** | Selenium WebDriver |
+| **AI/ML** | Gemini API Integration, Prompt Engineering |
 
 ---
 
 ### 🏆 Milestones & Artifacts
-* [cite_start]✨ **Dreamie**: AI-powered dream interpretation engine with personalized style modules[cite: 193, 196].
-* [cite_start]🛡️ **SMMM Asistanım**: Specialized Windows automation tool for financial consultancy workflows[cite: 201, 203].
-* [cite_start]🌍 **Visitalia**: Collaborative full-stack tourism platform built with ASP.NET MVC[cite: 207, 208].
-* [cite_start]🥇 **1st Place**: Winner of IKUANTS Glow Up Ideathon for sustainable housing solutions[cite: 262, 263].
+* 🧑‍🍳 **MELD**: AI-powered fusion recipe generator mobile app. 
+* ✨ **Dreamie**: AI-powered dream interpretation engine with personalized style modules implemented mobile app.
+* 🛡️ **SMMM Asistanım**: Specialized Windows app as automation tool for financial consultancy workflows.
+* 🌍 **Visitalia**: Collaborative full-stack tourism platform built with ASP.NET MVC.
+* 🥇 **1st Place**: Winner of IKUANTS Glow Up Ideathon for sustainable housing solutions.
 
 
 ---
@@ -49,7 +50,3 @@
   <a href="https://linkedin.com/in/faruksevuk"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
   <a href="https://faruksevuk.com"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=about.me&logoColor=white" /></a>
 </p>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/faruksevuk/faruksevuk/output/github-contribution-grid-snake.svg" alt="Snake" />
-</div>
