@@ -2,386 +2,119 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Faruk Sevük — I ship AI products</title>
-  <meta name="description" content="I'm Faruk, 21, from Istanbul. I built Meld — an AI cooking app — solo, idea to paying App Store users. Open to a 3–6 month Erasmus+ traineeship in the EU." />
-  <link rel="canonical" href="https://faruksevuk.com/" />
-  <meta name="author" content="Faruk Sevük" />
-  <meta name="theme-color" content="#11241c" />
-  <link rel="me" href="https://github.com/faruksevuk" />
-  <link rel="me" href="https://linkedin.com/in/faruksevuk" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://faruksevuk.com/" />
-  <meta property="og:title" content="Faruk Sevük — I ship AI products" />
-  <meta property="og:description" content="21, Istanbul. Built Meld — an AI cooking app — solo to paying App Store users, in 12 languages. Cut a finance firm's manual work ~70%. Open to an Erasmus+ traineeship." />
-  <meta property="og:site_name" content="Faruk Sevük" />
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:image" content="https://faruksevuk.com/images/og-card.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Faruk Sevük — I ship AI products people actually use. faruksevuk.com" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Faruk Sevük — I ship AI products" />
-  <meta name="twitter:description" content="21, Istanbul. Built Meld — an AI cooking app — solo to paying App Store users, in 12 languages. Open to an Erasmus+ traineeship." />
-  <meta name="twitter:image" content="https://faruksevuk.com/images/og-card.png" />
-
-  <!-- Inline SVG favicon: "F." monogram, zest on deep green -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='7'%20fill='%2311241c'/%3E%3Ctext%20x='16'%20y='23'%20font-family='Arial,sans-serif'%20font-size='20'%20font-weight='700'%20text-anchor='middle'%20fill='%23c6f24e'%3EF.%3C/text%3E%3C/svg%3E" />
-
-  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
-  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
-  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&f[]=familjen-grotesk@400,500,600,700&display=swap" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Faruk Sevük</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Griffy&family=Pirata+One&family=Metal+Mania&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Structured data: who I am, what I built (SEO / GEO / AEO) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "ProfilePage",
-        "@id": "https://faruksevuk.com/#page",
-        "url": "https://faruksevuk.com/",
-        "name": "Faruk Sevük — I ship AI products",
-        "dateModified": "2026-07-05",
-        "inLanguage": "en",
-        "isPartOf": { "@id": "https://faruksevuk.com/#site" },
-        "mainEntity": { "@id": "https://faruksevuk.com/#faruk" }
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://faruksevuk.com/#site",
-        "url": "https://faruksevuk.com/",
-        "name": "Faruk Sevük",
-        "publisher": { "@id": "https://faruksevuk.com/#faruk" },
-        "inLanguage": "en"
-      },
-      {
-        "@type": "Person",
-        "@id": "https://faruksevuk.com/#faruk",
-        "name": "Faruk Sevük",
-        "alternateName": "Faruk Sevuk",
-        "url": "https://faruksevuk.com/",
-        "image": "https://faruksevuk.com/images/FarukSevuk_Pic.png",
-        "email": "mailto:hello@faruksevuk.com",
-        "jobTitle": "Flutter & AI Developer",
-        "description": "21-year-old Computer Engineering student in Istanbul who solo-built and shipped Meld, an AI fusion-cooking app, to the App Store — 106 cuisines, 12 languages, paying subscribers. Open to a 3–6 month Erasmus+ traineeship with an EU team.",
-        "address": { "@type": "PostalAddress", "addressLocality": "Istanbul", "addressCountry": "TR" },
-        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Istanbul Kültür University" },
-        "knowsLanguage": ["tr", "en", "de"],
-        "knowsAbout": ["Flutter", "Dart", "Gemini API", "Prompt engineering", "Supabase", "Firebase", "Python", "Selenium", "Workflow automation", "RevenueCat"],
-        "sameAs": [
-          "https://github.com/faruksevuk",
-          "https://linkedin.com/in/faruksevuk"
-        ]
-      },
-      {
-        "@type": "SoftwareApplication",
-        "@id": "https://faruksevuk.com/#meld",
-        "name": "Meld",
-        "url": "https://meldkitchen.vercel.app/",
-        "applicationCategory": "LifestyleApplication",
-        "operatingSystem": "iOS",
-        "description": "AI fusion-cooking app: pick two cuisines and Meld invents a dish that respects both. 106 cuisines, 11 dietary systems, fully localized in 12 languages. Free download with optional premium subscription.",
-        "author": { "@id": "https://faruksevuk.com/#faruk" }
-      }
-    ]
-  }
-  </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="topbar">
-    <a class="topbar__mark" href="#main" aria-label="Faruk Sevük — home">
-      <span class="topbar__monogram" aria-hidden="true">F.</span>
-      <span class="topbar__name">Faruk Sevük</span>
-    </a>
-    <nav class="topbar__nav" aria-label="Primary">
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a class="topbar__cta" href="https://calendar.app.google/DVNWi9tZd3S2ZeZz5" target="_blank" rel="noopener noreferrer">Book a call</a>
-    </nav>
-  </header>
+  <div class="bg-layer"></div>
+  <canvas id="stars"></canvas>
 
-  <main id="main" class="page">
+  <main class="page">
 
-    <!-- ───────────────────────── HERO ───────────────────────── -->
-    <section class="hero" aria-labelledby="hero-h1">
-      <div class="hero__grid">
-
-        <div class="hero__lede">
-          <p class="hero__eyebrow reveal" data-reveal>Faruk Sevük — Istanbul</p>
-          <h1 id="hero-h1" class="hero__title reveal" data-reveal>I ship AI products people&nbsp;actually&nbsp;use.</h1>
-          <p class="hero__support reveal" data-reveal>
-            Computer Engineering student in Istanbul. I built <strong>Meld</strong> — an AI cooking app — alone,
-            from first sketch to paying App&nbsp;Store subscribers, in 12 languages. Before that I automated a
-            financial consultancy's data entry and cut their manual work by 70%.
-          </p>
-
-          <p class="hero__status reveal" data-reveal>
-            <span class="hero__status-dot" aria-hidden="true"></span>
-            Open to a 3–6 month Erasmus+ traineeship with an EU team — the grant covers my costs.
-          </p>
-
-          <div class="hero__cta reveal" data-reveal>
-            <a class="btn btn--primary" href="https://calendar.app.google/DVNWi9tZd3S2ZeZz5" target="_blank" rel="noopener noreferrer">
-              Book a 15-minute call
-              <svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-            <a class="btn btn--ghost" href="mailto:hello@faruksevuk.com">hello@faruksevuk.com</a>
-          </div>
-
-          <nav class="hero__links reveal" data-reveal aria-label="Elsewhere">
-            <a href="https://github.com/faruksevuk" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <span aria-hidden="true">·</span>
-            <a href="https://linkedin.com/in/faruksevuk" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <span aria-hidden="true">·</span>
-            <a href="FarukSevuk_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-          </nav>
-        </div>
-
-        <!-- Portrait: framed with a drafting corner-bracket, never blurred -->
-        <div class="hero__portrait reveal" data-reveal>
-          <figure class="portrait">
-            <span class="portrait__bracket portrait__bracket--tl" aria-hidden="true"></span>
-            <span class="portrait__bracket portrait__bracket--br" aria-hidden="true"></span>
-            <img
-              id="profileImage"
-              class="portrait__img"
-              src="images/FarukSevuk_Pic.png"
-              width="440" height="512"
-              fetchpriority="high"
-              tabindex="0" role="button"
-              aria-label="Faruk Sevük — a 21-year-old developer from Istanbul, looking straight at you. Double-click, or press Enter twice, for a small surprise."
-              alt="Faruk Sevük — a 21-year-old developer from Istanbul, looking straight at you."
-            />
-            <figcaption class="portrait__cap">Istanbul → open to the EU</figcaption>
-          </figure>
-        </div>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="avatar-wrap">
+        <div class="avatar" id="profileImage"></div>
+        <div class="avatar-ring"></div>
       </div>
 
-      <!-- Signature: the shipping ledger (proof points as annotated line-items) -->
-      <aside class="ledger reveal" data-reveal aria-label="Track record">
-        <div class="ledger__head-block">
-          <p class="ledger__head">Shipped, not slideware</p>
-          <p class="ledger__intro">Four things that are true, and checkable:</p>
-        </div>
-        <ul class="ledger__list">
-          <li class="ledger__row">
-            <span class="ledger__tick" aria-hidden="true"></span>
-            <span class="ledger__line">Live on the App Store</span>
-            <span class="ledger__note">solo — idea to monetization</span>
-          </li>
-          <li class="ledger__row">
-            <span class="ledger__tick" aria-hidden="true"></span>
-            <span class="ledger__line">106 cuisines · 12 languages · 11 dietary systems</span>
-            <span class="ledger__note">one app, fully localized</span>
-          </li>
-          <li class="ledger__row">
-            <span class="ledger__tick" aria-hidden="true"></span>
-            <span class="ledger__line">~70% less manual data entry</span>
-            <span class="ledger__note">for a real accounting firm</span>
-          </li>
-          <li class="ledger__row">
-            <span class="ledger__tick" aria-hidden="true"></span>
-            <span class="ledger__line">1st of 15 teams</span>
-            <span class="ledger__note">IKUANTS Glow Up Ideathon</span>
-          </li>
-        </ul>
-      </aside>
-    </section>
+      <div class="hero-text">
+        <p class="label">⚓ Computer Engineering Student</p>
+        <h1>Faruk<br>Sevük</h1>
+        <p class="tagline">Flutter developer. Builder of things that ship.<br>
+          Currently sailing the seas of AI-powered apps.</p>
 
-    <!-- ───────────────────────── WORK ───────────────────────── -->
-    <section class="work" id="work" aria-labelledby="work-h2">
-      <div class="section-head">
-        <h2 id="work-h2" class="section-head__title">Three things I built and shipped.</h2>
-        <p class="section-head__sub">One is live and taking payments. Each one solved a real problem for real people.</p>
-      </div>
-
-      <!-- FLAGSHIP: Meld -->
-      <article class="meld" aria-labelledby="meld-h3">
-        <div class="meld__body">
-          <div class="meld__topline">
-            <span class="badge badge--live"><span class="badge__pulse" aria-hidden="true"></span>Live on the App Store</span>
-            <span class="meld__kind">Flagship</span>
-          </div>
-          <h3 id="meld-h3" class="meld__title">Meld</h3>
-          <p class="meld__tag">AI fusion cooking</p>
-          <p class="meld__desc">
-            Pick two cuisines and Meld invents a dish that respects both. 106 cuisines, 11 dietary
-            systems — Halal to Jain to Orthodox fasting — fully localized in 12 languages. Built alone:
-            Flutter, Supabase, Gemini with prompt engineering that keeps recipes from repeating,
-            RevenueCat for subscriptions. No team, no template — idea to paying users.
-          </p>
-          <ul class="chips" aria-label="Meld stack">
-            <li>Flutter</li><li>Supabase</li><li>Gemini API</li><li>RevenueCat</li>
-          </ul>
-          <a class="meld__link" href="https://meldkitchen.vercel.app/" target="_blank" rel="noopener noreferrer">
-            See Meld live
-            <svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        <div class="icons">
+          <a href="https://linkedin.com/in/faruksevuk" target="_blank" class="icon-btn linkedin" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/faruksevuk" target="_blank" class="icon-btn github" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <a href="https://faruksevuk.com/FarukSevuk_Resume.pdf" target="_blank" class="icon-btn cv" aria-label="Resume">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 1.5L18.5 9H13V3.5zM6 20V4h5v7h7v9H6zm2-5h8v1H8v-1zm0-2h8v1H8v-1zm0-2h5v1H8v-1z"/></svg>
+          </a>
+          <a href="mailto:faruksevuk@outlook.com" class="icon-btn mail" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
           </a>
         </div>
-
-        <!-- Crafted CSS phone mockup with a fusion recipe card -->
-        <div class="meld__visual" aria-hidden="true">
-          <div class="phone">
-            <span class="phone__notch"></span>
-            <div class="phone__screen">
-              <p class="phone__eyebrow">Today's fusion</p>
-              <div class="phone__fuse">
-                <span class="phone__cuisine">🇯🇵 Japanese</span>
-                <span class="phone__plus">+</span>
-                <span class="phone__cuisine">🇲🇽 Mexican</span>
-              </div>
-              <div class="phone__dish">
-                <div class="phone__dish-art">
-                  <span class="phone__bowl"></span>
-                </div>
-                <p class="phone__dish-name">Miso Birria Tacos</p>
-                <div class="phone__meta">
-                  <span class="phone__pill">Halal</span>
-                  <span class="phone__pill">45 min</span>
-                </div>
-              </div>
-              <!-- 12 languages, rendered as proof: the localized shipping surface -->
-              <div class="phone__langs">
-                <span>EN</span><span>TR</span><span>DE</span><span>JA</span><span class="phone__langs-more">+8</span>
-              </div>
-              <button class="phone__btn" type="button" tabindex="-1">Meld it again</button>
-            </div>
-          </div>
-        </div>
-      </article>
-
-      <!-- SUPPORTING: two differentiated (not-identical) panels, each with a bespoke artifact -->
-      <div class="support">
-        <article class="proj proj--smmm" aria-labelledby="smmm-h3">
-          <div class="proj__copy">
-            <h3 id="smmm-h3" class="proj__title">SMMM Asistanım</h3>
-            <p class="proj__tag">Automation for a real accounting firm</p>
-            <p class="proj__desc">
-              A financial consultancy was hand-typing declarations for 100+ clients. I built a Windows
-              desktop app that fills the government portals itself — Selenium underneath, Firebase for
-              records. Manual entry dropped about 70%, and they run it every day.
-            </p>
-            <ul class="chips" aria-label="SMMM Asistanım stack">
-              <li>Flutter (Windows)</li><li>Firebase</li><li>Selenium</li>
-            </ul>
-          </div>
-          <!-- artifact: the 70% cut, as a before/after bar comparison -->
-          <figure class="proj__figure">
-            <svg viewBox="0 0 200 150" class="bars-svg" role="img" aria-label="Bar comparison: manual data entry dropped about 70% after the app.">
-              <line x1="16" y1="122" x2="192" y2="122" class="bars-axis" />
-              <line x1="16" y1="16" x2="16" y2="122" class="bars-axis" />
-              <rect x="46" y="30" width="30" height="92" rx="3" class="bars-before" />
-              <rect x="130" y="94" width="30" height="28" rx="3" class="bars-after" />
-              <text x="61" y="24" class="bars-label">before</text>
-              <text x="145" y="88" class="bars-label">after</text>
-              <text x="104" y="143" class="bars-caption">~70% less manual entry</text>
-            </svg>
-          </figure>
-        </article>
-
-        <article class="proj proj--dreamie" aria-labelledby="dreamie-h3">
-          <div class="proj__copy">
-            <h3 id="dreamie-h3" class="proj__title">Dreamie</h3>
-            <p class="proj__tag">One dream, three readings</p>
-            <p class="proj__desc">
-              Log a dream, get three readings of it — psychological, spiritual, Islamic — each with its own
-              Gemini prompt pipeline. Dream history lives in Cloud Firestore.
-            </p>
-            <ul class="chips" aria-label="Dreamie stack">
-              <li>Flutter</li><li>Firestore</li><li>Gemini API</li>
-            </ul>
-          </div>
-          <!-- artifact: three overlapping reading-rings = three interpretations -->
-          <figure class="proj__figure">
-            <svg viewBox="0 0 200 150" class="rings-svg" role="img" aria-label="Three overlapping rings: psychological, spiritual, and Islamic readings of one dream.">
-              <circle cx="76" cy="64" r="33" class="rings-ring rings-ring-1" />
-              <circle cx="100" cy="80" r="33" class="rings-ring rings-ring-2" />
-              <circle cx="124" cy="64" r="33" class="rings-ring rings-ring-3" />
-              <text x="63" y="58" class="rings-label" text-anchor="middle">P</text>
-              <text x="100" y="94" class="rings-label" text-anchor="middle">S</text>
-              <text x="137" y="58" class="rings-label" text-anchor="middle">I</text>
-              <text x="100" y="143" class="rings-caption" text-anchor="middle">three readings, one dream</text>
-            </svg>
-          </figure>
-        </article>
       </div>
 
-      <a class="more-link" href="https://github.com/faruksevuk" target="_blank" rel="noopener noreferrer">More on GitHub
-        <svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-    </section>
-
-    <!-- ───────────────────────── ABOUT ───────────────────────── -->
-    <section class="about" id="about" aria-labelledby="about-h2">
-      <div class="about__grid">
-        <h2 id="about-h2" class="about__title">How I work</h2>
-        <div class="about__prose">
-          <p>
-            I'm 21, based in Istanbul, graduating in Computer Engineering in 2026. In 2025 I moved to
-            Germany for an Erasmus exchange in Karlsruhe — new country, new system, picked up German along
-            the way. I won a 15-team ideathon with a housing platform pitch. I care how companies work, not
-            just how code works: ask me about your pricing model and I'll have opinions.
-          </p>
-          <p>
-            What I want next: six months with an EU team that ships. I automate what's repetitive, I ask
-            about the business, and I don't need hand-holding — Meld exists because there was nobody to
-            hand-hold me. Erasmus+ covers my costs, so the risk on your side is roughly one onboarding coffee.
-          </p>
-        </div>
-      </div>
-
-      <div class="stack" aria-label="Tools I use">
-        <div class="stack__row">
-          <p class="stack__label">Ship daily</p>
-          <ul class="stack__items"><li>Flutter &amp; Dart</li><li>Gemini API</li><li>Supabase</li><li>Firebase</li></ul>
-        </div>
-        <div class="stack__row">
-          <p class="stack__label">Automate with</p>
-          <ul class="stack__items"><li>Python</li><li>Selenium</li><li>n8n</li></ul>
-        </div>
-        <div class="stack__row">
-          <p class="stack__label">Also speak</p>
-          <ul class="stack__items"><li>C</li><li>C++</li><li>C#</li><li>SQL</li><li>ASP.NET MVC</li></ul>
-        </div>
-        <div class="stack__row">
-          <p class="stack__label">Around the code</p>
-          <ul class="stack__items"><li>RevenueCat</li><li>Git</li><li>Figma</li><li>Prompt engineering for production LLMs</li></ul>
-        </div>
+      <!-- SCROLL HINT -->
+      <div class="scroll-hint" id="scrollHint">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
       </div>
     </section>
 
-    <!-- ───────────────────────── CONTACT ───────────────────────── -->
-    <section class="contact" id="contact" aria-labelledby="contact-h2">
-      <h2 id="contact-h2" class="contact__title">Fifteen minutes. That's the ask.</h2>
-      <p class="contact__body">
-        If your team could use someone who ships fast and asks good questions, let's talk. Worst case, you
-        spent a quarter of an hour with someone who read your docs before the call.
+    <!-- SUMMARY -->
+    <section class="summary">
+      <p class="summary-text">
+        <strong>Flutter developer and Computer Engineer</strong>ing student with a proven ability to ship production‑ready, AI‑powered mobile applications. 
+        Built and launched <strong>Meld</strong> — a fusion recipe app spanning 106 world cuisines, 11 dietary filters, and 11 languages, 
+        currently live on the App Store; independently, from concept to deployment. Experienced with Gemini API, Supabase, Firebase, and 
+        RevenueCat. Completed an <strong>Erasmus+</strong> exchange at Karlsruhe University of Applied Sciences, Germany. Awarded <strong>1st place</strong> 
+        at IKUANTS Glow Up Ideathon among 15 teams. Looking to join a team where I can build real products, grow fast, and contribute from day one. 
+        <strong>Not just building features — building products that reach real users.</strong>
       </p>
-      <div class="contact__cta">
-        <a class="btn btn--primary btn--lg" href="https://calendar.app.google/DVNWi9tZd3S2ZeZz5" target="_blank" rel="noopener noreferrer">
-          Book a call
-          <svg class="btn__arrow" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <h2 class="section-title">⚔ Voyages</h2>
+      <div class="cards">
+
+        <a href="https://apps.apple.com/app/meld" target="_blank" class="card">
+          <div class="card-badge live">Live on App Store</div>
+          <h3>Meld</h3>
+          <p class="card-sub">AI Fusion Culinary App</p>
+          <p class="card-desc">106 world cuisines × AI = endless unique recipes. Flutter · Supabase · Gemini API · RevenueCat · 11 languages</p>
+          <span class="card-arrow">→</span>
         </a>
-        <a class="btn btn--ghost btn--lg" href="mailto:hello@faruksevuk.com">hello@faruksevuk.com</a>
-        <a class="btn btn--ghost btn--lg" href="FarukSevuk_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+
+        <div class="card">
+          <div class="card-badge">Flutter · Firebase</div>
+          <h3>Dreamie</h3>
+          <p class="card-sub">AI Dream Analysis App</p>
+          <p class="card-desc">Multi-perspective dream interpretation — Psychological, Spiritual, Islamic. Powered by Gemini API.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-badge">Flutter · Windows</div>
+          <h3>SMMM Asistanım</h3>
+          <p class="card-sub">Financial Consultant Assistant</p>
+          <p class="card-desc">Desktop app automating financial workflows. 100+ client records, ~70% reduction in manual data entry.</p>
+        </div>
+
+        <a href="https://github.com/faruksevuk" target="_blank" class="card ghost">
+          <p class="card-ghost-text">More on GitHub →</p>
+        </a>
+
       </div>
     </section>
+
+    <!-- TREASURE HINT -->
+    <section class="treasure-hint">
+      <p class="hint-text">🗺 This is somewhat a treasure map. The treasure is alive.<br>
+        <span class="hint-small">Hint: double-click the portrait above.</span>
+      </p>
+    </section>
+
   </main>
 
-  <footer class="foot">
-    <p class="foot__copy">© 2026 Faruk Sevük · Istanbul</p>
-    <p class="foot__egg">psst — double-click the portrait</p>
-    <p class="foot__credit">Sound: “Spybreak!” — The Matrix soundtrack</p>
+  <footer>
+    <p class="footer-brand">© 2025 Captain Faruk. All doubloons reserved. ☠</p>
+    <p class="footer-credits">
+      Icons: Freepik · Dave Gandy · Icon Hubs · Atif Arshad (Flaticon) &nbsp;·&nbsp;
+      Sound: The Matrix Soundtrack – Spybreak
+    </p>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>

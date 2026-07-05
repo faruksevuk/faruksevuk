@@ -1,5 +1,0 @@
-# faruksevuk.com — everyone welcome, AI crawlers included (see /llms.txt)
-User-agent: *
-Allow: /
-
-Sitemap: https://faruksevuk.com/sitemap.xml
