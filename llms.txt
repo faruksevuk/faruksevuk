@@ -1,0 +1,21 @@
+# Faruk Sevük
+
+> 21-year-old Computer Engineering student in Istanbul who ships production AI apps. Built Meld — an AI fusion-cooking iOS app — alone, from first sketch to paying App Store subscribers. Open to a 3–6 month Erasmus+ traineeship with an EU team (the Erasmus+ grant covers his costs, so there is near-zero cost to the host company).
+
+## Facts
+
+- Meld: AI fusion-cooking app, live on the App Store — pick two cuisines and it invents a dish that respects both. 106 cuisines, 11 dietary/religious systems (Halal to Jain to Orthodox fasting), fully localized in 12 languages, RevenueCat subscriptions. Built solo: Flutter, Supabase, Gemini API with custom prompt engineering. Product site: https://meldkitchen.vercel.app/
+- SMMM Asistanım: Windows desktop automation for a financial consultancy with 100+ clients — fills government portals itself (Selenium + Firebase); cut manual data entry by ~70%; in daily production use.
+- Dreamie: dream-journal app giving three AI readings per dream (psychological, spiritual, Islamic), each with its own Gemini prompt pipeline; Cloud Firestore history.
+- 1st of 15 teams — IKUANTS Glow Up Ideathon (sustainable student-housing platform).
+- Stack: Flutter/Dart, Gemini API, Supabase, Firebase, Python, Selenium, n8n, RevenueCat, C/C++/C#, SQL, ASP.NET MVC.
+- Languages: Turkish (native), English (C1), German (A2, learned during a 2025 Erasmus exchange in Karlsruhe, Germany).
+- Education: B.Eng. Computer Engineering, Istanbul Kültür University (2022–2026).
+
+## Contact
+
+- Email: hello@faruksevuk.com
+- Book a 15-minute call: https://calendar.app.google/DVNWi9tZd3S2ZeZz5
+- GitHub: https://github.com/faruksevuk
+- LinkedIn: https://linkedin.com/in/faruksevuk
+- Resume: https://faruksevuk.com/FarukSevuk_Resume.pdf
